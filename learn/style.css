@@ -1,0 +1,271 @@
+﻿#all {
+        text-align: center;
+}
+
+header, footer, nav, aside, section, article {
+	display: block;
+}
+
+header, nav, footer {
+	width: 100%;
+}
+/*aside 설정*/
+aside {
+	background-color: white;
+	width: 20%;
+	margin: 100px 50px 0px 0px;
+	float: left;
+}
+/*section 설정*/
+section {
+	margin-bottom: 10px;
+	width: 75%;
+	background-color: white;
+	height: 100%;
+	margin: 100px 0px 100px 0px;
+}
+
+body {
+	background-color: white;
+	font-family: "Trebuchet MS", Dotum;
+}
+a:link {
+	color: #06729F;
+	text-decoration: none;
+}
+a:visited {
+	color: #06729F;
+	text-decoration: none;
+}
+a:hover {
+	color: #06729F;
+	text-decoration: none;
+}
+.topLink:link {
+	color: white;
+	text-decoration: none;
+}
+.topLink:visited {
+	color: white;
+	text-decoration: none;
+}
+.topLink:hover {
+	color: #FFDD73;
+	text-decoration: none;
+}
+
+/*최상위 로그인.. 메뉴 설정*/
+.user ul {
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	background-color: black;
+	color: white;
+	width: 1200px;
+	height: 30px;
+	list-style-type: none;: inline-block;
+	padding-top: 15px;
+	opacity: 0.5;
+	box-shadow: 0px 3px 5px gray;
+}
+
+.user ul li {
+	float: right;
+	margin: 0 12px 0 0;
+}
+
+header {
+	font-family: "Trebuchet MS", Dotum;
+	clear: both;
+	background-color: white;
+	color: #06729F;
+	font-weight: bold;
+	font-size: 25pt;
+	height: 80px;
+	padding: 50px 0 0 0;
+	margin: 40px 0px 0px 0px;
+	text-align: center;
+}
+
+span {
+	color: black;
+}
+
+nav {
+	background-color: black;
+	font-weight: bold;
+	font-family: "Trebuchet MS", Dotum;
+	margin-top: 21px;
+}
+
+.nav_menu ul {
+	list-style-type: none;
+	margin: 0px -15px 0 -0px;
+}
+
+.nav_menu ul li {
+	position: absolute;
+	background-color: white;
+	display: inline-block;
+	width: 165px; /*상위 메뉴의 가로 너비*/
+	color: #06729F;
+	text-align: center;
+	padding: 10px 100px 10px 100px;
+	border-bottom: 1px solid #06729F; /*빨강 #e33214;*/
+}
+.menu1 {
+	left: 10px;
+}
+.menu2 {
+	left: 290px;
+}
+
+.menu3 {
+	left: 570px;
+}
+
+.menu4 {
+	left: 880px;
+}
+.nav_menu ul li a {
+	font-size: 20;
+}
+
+/*nav_menu라는 아이디를 갖는 레이어 내부에 위치하는 ul안의 ul의 설정:*/
+.nav_menu ul ul {
+	display: none;
+	position: absolute;
+	margin: 14px 0 0 -141px;
+	opacity: 0.9;
+}
+/*.nav_menu내부의 ul의 li에 마우스롤오버시 그 내부의 ul을 나타내기위함*/
+.nav_menu ul li:hover ul {
+	display: block;
+}
+/*상위 메뉴의 마우스오버상태 설정*/
+nav ul li:hover {
+	color: #2b6aaf;
+	border-bottom: 4px solid #06729F;
+}
+/*하위 메뉴의 마우스롤오버상태 설정:배경, 테두리*/
+nav ul ul li:hover {
+	background-color: #83CBDA; /*#f5f5f5;*/
+	border-bottom: 1px solid #06729F;
+}
+/*서브메뉴 리스트에 관한 설정:투명도, */
+.nav_menu ul ul li {
+	position: relative;
+}
+
+/*footer 기본 설정*/
+footer {
+	clear: both;
+	font-family: Gulim;
+	position: relative;
+	background-color: #fefefe;
+	height: 80px;
+	bottom: 0px;
+	border-top: 1px solid #bebebe;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.footer_logo {
+	font-family: "Trebuchet MS", Dotum;
+	font-size: 30pt;
+	color: #06729F;
+	font-weight: bold;
+	float: left;
+	padding-top: 40px;
+	margin-left: 150px;
+}
+
+.footer_comments {
+	float: left;
+	padding-top: 40px;
+	margin-left: 50px;
+}
+
+/*tab.html 부분*/
+#container {
+	width: 900px;
+	margin: 0 auto 30px auto;
+	overflow : auto;
+}
+.tab {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.tab li {
+	float: left;
+}
+.tab li a {
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	padding: 14px 16px;
+	font-size: 17px;
+	transition: 0.3s;
+}
+.tabcontent {
+	display: none;
+	background-color: #E7E7E7;
+	padding: 6px 12px;
+	color: black;
+	text-align : left;
+	overflow : auto;
+}
+ul.tab li.current {
+	background-color: #E7E7E7;
+}
+.tabcontent.current {
+	display: block;
+}
+
+/*tree menu부분*/
+.tree {
+	color: #393939;
+}
+.tree, .tree ul {
+	list-style: none;
+	padding-left: 17px;
+}
+.tree *:before {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+}
+.tree label {
+	cursor: pointer;
+}
+.tree label:before {
+	content: '\f256';
+	font-family: fontello;
+}
+.tree a {
+	text-decoration: none;
+	color: #393939;
+}
+.tree a:before {
+	content: '\e800';
+	font-family: fontello;
+}
+.tree input[type="checkbox"] {
+	display: none;
+}
+.tree input[type="checkbox"]:checked~
+ul {
+	display: none;
+}
+.tree input[type="checkbox"]:checked {
+	background: url('plus.jpg') left :30px no-repeat ;
+}
+.tree input[type="checkbox"]:checked+ label {
+	background: url('plus.jpg') left :30px no-repeat ;
+}
+
+.tree input[type="checkbox"]:checked+ label:before {
+	content: '\f255';
+	font-family: fontello;
+}
