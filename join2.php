@@ -1,6 +1,4 @@
 <?php
-	include "./crypt.php";
-
 	$con = mysqli_connect("localhost", "root", "kkiinngg31");
 	$dbname = "temp";
 	mysqli_select_db($con, $dbname);
@@ -19,7 +17,8 @@
 	$rows = mysqli_fetch_array($result);
 	if(!$rows){
 
-		$encrypt = aes_encrypt($pw, "encoding");
+		$command = "sudo ./simpleDES encrypt ".$pw;
+		$encrypt = base64_encode(shell_exec($command));
 
 		$query = "insert into user(ID,password,name) values('$id','$encrypt','$name')";
 		mysqli_query($con, $query);
