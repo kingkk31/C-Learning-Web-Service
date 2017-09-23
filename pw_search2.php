@@ -1,7 +1,5 @@
 <meta charset="UTF-8">
 <?php 
-	include "./crypt.php";
-
 	$conn = mysqli_connect("localhost","root","kkiinngg31") ; 
 	$dbname="temp";
 
@@ -12,9 +10,9 @@
 	 $result = mysqli_query($conn, $sql);
 	 $row = mysqli_fetch_array($result); //가져온 쿼리 결과를 담음
 	 if(!empty($row)){
-		$pw = aes_decrypt($row[password], "encoding");
-	  echo "<script>alert('회원님의 비밀번호는 ".$pw."입니다. 로그인해주세요'); location.href='login.php';</script>";
-
+		$pw = base64_decode($row['password']);
+		$pw = shell_exec("sudo ./simpleDES decrypt ".$pw);
+	  	echo "<script>alert('회원님의 비밀번호는 ".$pw."입니다. 로그인해주세요'); location.href='login.php';</script>";
 	 }
 	 else{
 	  echo "<script>alert('비밀번호 찾기 실패. 다시 입력해주세요'); location.href='pw_search.php';</script>";

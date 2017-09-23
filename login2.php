@@ -33,6 +33,10 @@
 			echo "<script>alert('$_SESSION[name]님 로그인 되었습니다.');</script>"; //알람창을 띄운 뒤 다음 화면으로 넘어간다.
 			echo "<script>window.location.replace(\"/home.php\");</script>";
 		}
+		else 
+		{
+	   		echo "<script>alert('아이디와 비밀번호를 확인해 주세요.'); location.href=('/login.php');</script>"; //정보가 없다면, 다시 로그인화면으로 돌아간다.
+		}
 	}
 	else 
 	{
