@@ -209,10 +209,12 @@ mysqli_set_charset($con, "utf8");
 						}
 					?></h2></div>
 		<aside>
-			<p style="margin:2%;margin-right:6%;font-size:13px;line-height:1.5em;"><strong style="font-size:16px;">[문 제]</strong><br/><br/>한신이의 가게는 여러가지를 팔고 있다. 그 중 의외로 많이 팔리는 제품으로 상자가 있다. 한신이가 파는 상자는 네 종류가 있으며 크기 순으로 A, B, C, D 타입으로 분류된다.<br/><br/>이 상자들의 겉면은 테두리를 제외한 안쪽의 모든 부분이 해당 상자의 타입으로 쓰여져 있다. 상자의 한 변의 길이는 상자의 겉을 이루는 문자의 수와 같으며 각 상자의 한 변의 길이는 A가 3, B가 4, C가 5, D가 6이다.<br/><br/>입력으로 상자의 타입이 대문자로 주어지면 해당 상자의 모습을 출력해보자.<br/>상자의 테두리는 '#'로 출력하며 테두리 안쪽은 해당 타입으로 출력한다.</p>
-<br/><br/>
+			<p style="margin:2%;margin-right:6%;font-size:13px;line-height:1.5em;"><strong style="font-size:16px;">[문 제]</strong><br/><br/>한신이의 가게는 여러가지를 팔고 있다. 그 중 의외로 많이 팔리는 제품으로 상자가 있다. 한신이가 파는 상자는 네 종류가 있으며 크기 순으로 A, B, C, D 타입으로 분류된다.<br/><br/>이 상자들의 겉면은 테두리를 제외한 안쪽의 모든 부분이 해당 상자의 타입으로 쓰여져 있다. 상자의 한 변의 길이는 상자의 겉을 이루는 문자의 수와 같으며 각 상자의 한 변의 길이는 A가 3, B가 4, C가 5, D가 6이다.<br/><br/>입력으로 상자의 타입이 대문자로 주어지면 해당 상자의 모습을 출력해보자.<br/>상자의 테두리는 '#'로 출력하며 테두리 안쪽은 해당 타입으로 출력한다.
+<br/><br/><strong>* 답안 출력 후 반드시 개행을 해줘야 하며 불이행 시 오답처리 될 수 있습니다. </strong>
+</p>
+<br/>
 					<p style="margin:2%;font-size:16px;line-height:1.5em;"><strong>[예제 입력]<br/></strong>B<br/></p>
-					<br/><br/>
+					<br/>
 					<p style="margin:2%;font-size:16px;line-height:1.5em;"><strong>[예제 출력]<br/></strong>####<br/>#BB#<br/>#BB#<br/>####<br/></p>
 					<br/><br/>
 		</aside>

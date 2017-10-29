@@ -209,7 +209,9 @@ mysqli_set_charset($con, "utf8");
 						}
 					?></h2></div>
 		<aside>
-			<p style="margin:2%;margin-right:6%;font-size:13px;line-height:1.5em;"><strong style="font-size:16px;">[문 제]</strong><br/><br/>한신이는 은행에 가서 통장을 만들고 N원을 저금했고 그 후로 이 통장에 입금이나 출금을 일절 하지 않았다. 문득 한신이는 몇 년이 지나면 통장에 저금되어 있는 돈이 M원을 넘을지 궁금해졌다.<br/><br/>이 통장은 통장을 만든지 1년이 지날때마다 저금되어 있는 돈의 B%만큼을 이자로 적립해준다. N, M, B가 주어졌을 때, 몇 년이 지나야 하는지 구하는 프로그램을 작성해보자.<br/><br/>입력으로 실수 N, B, M이 주어지며, M은 항상 N보다 크다. N과 M은 항상 백만보다 작거나 같은 수 이고 음수가 아니다. B는 50보다 작거나 같은 양수이다.</p>
+			<p style="margin:2%;margin-right:6%;font-size:13px;line-height:1.5em;"><strong style="font-size:16px;">[문 제]</strong><br/><br/>한신이는 은행에 가서 통장을 만들고 N원을 저금했고 그 후로 이 통장에 입금이나 출금을 일절 하지 않았다. 문득 한신이는 몇 년이 지나면 통장에 저금되어 있는 돈이 M원을 넘을지 궁금해졌다.<br/><br/>이 통장은 통장을 만든지 1년이 지날때마다 저금되어 있는 돈의 B%만큼을 이자로 적립해준다. N, M, B가 주어졌을 때, 몇 년이 지나야 하는지 구하는 프로그램을 작성해보자.<br/><br/>입력으로 실수 N, B, M이 주어지며, M은 항상 N보다 크다. N과 M은 항상 백만보다 작거나 같은 수 이고 음수가 아니다. B는 50보다 작거나 같은 양수이다.
+<br/><br/><strong>* 답안 출력 후 반드시 개행을 해줘야 하며 불이행 시 오답처리 될 수 있습니다. </strong>
+</p>
 <br/><br/>
 					<p style="margin:2%;font-size:16px;line-height:1.5em;"><strong>[예제 입력]<br/></strong>200.00 6.5 300<br/></p>
 					<br/><br/>

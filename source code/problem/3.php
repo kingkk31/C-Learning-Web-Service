@@ -209,7 +209,9 @@ mysqli_set_charset($con, "utf8");
 						}
 					?></h2></div>
 		<aside>
-			<p style="margin:2%;margin-right:6%;font-size:13px;line-height:1.5em;"><strong style="font-size:16px;">[문 제]</strong><br/><br/>세 자연수가 입력으로 주어진다.<br/><br/>아랫줄에 입력으로 A, B, C를 사용해 순서를 제시하면, 순서에 맞게 숫자 3개를 출력해보자.<br/><br/>(세 숫자는 100보다 작으며, 순서 A, B, C는 A < B < C 의 규칙을 가진다.)</p>
+			<p style="margin:2%;margin-right:6%;font-size:13px;line-height:1.5em;"><strong style="font-size:16px;">[문 제]</strong><br/><br/>세 자연수가 입력으로 주어진다.<br/><br/>아랫줄에 입력으로 A, B, C를 사용해 순서를 제시하면, 순서에 맞게 숫자 3개를 출력해보자.<br/><br/>(세 숫자는 100보다 작으며, 순서 A, B, C는 A < B < C 의 규칙을 가진다.)
+<br/><br/><strong>* 답안 출력 후 반드시 개행을 해줘야 하며 불이행 시 오답처리 될 수 있습니다. </strong>
+</p>
 <br/><br/>
 					<p style="margin:2%;font-size:16px;line-height:1.5em;"><strong>[예제 입력]<br/></strong>1 5 3<br/>A B C<br/></p>
 					<br/><br/>
