@@ -8,9 +8,8 @@
 header, footer, nav, aside, section, article {
 	display: block;
 }
-
-header, nav, footer {
-	width: 100%;
+header, footer, nav{
+	width:1200px;
 }
 
 /*헤더부분*/
@@ -44,7 +43,7 @@ nav {
 .nav_menu ul li {
 	background-color: white;
 	display: inline-block;
-	width: 155px; /*상위 메뉴의 가로 너비*/
+	width: 13%; /*상위 메뉴의 가로 너비*/
 	color: #4C4C4C;
 	margin-left:10px;
 	text-align: center;
@@ -138,7 +137,7 @@ footer {
 	border-bottom-right-radius: 7px;
 	background-color: black;
 	color: white;
-	width: 1200px;
+	width: 98%;
 	height: 30px;
 	list-style-type: none;
 	padding-top: 15px;
